@@ -1,0 +1,25 @@
+{
+	"name": "wcd-next",
+	"version": "1.0.0",
+	"description": "next, typescript, apollo server/client, graphql",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "engines": {
+		"node": "14.4.0"
+	},
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DopamineDriven/wcd-next.git"
+	},
+	"keywords": [],
+	"author": "Andrew Ross",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/DopamineDriven/wcd-next/issues"
+	},
+	"homepage": "https://github.com/DopamineDriven/wcd-next#readme"
+}
