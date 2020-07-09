@@ -2,24 +2,43 @@
 	"name": "wcd-next",
 	"version": "1.0.0",
 	"description": "next, typescript, apollo server/client, graphql",
-  "private": true,
-  "workspaces": ["packages/*"],
-  "engines": {
-		"node": "14.4.0"
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"engines": {
+		"node": "14.5.0"
 	},
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"codegen": "graphql-let",
+		"dev": "next",
+		"build": "next build",
+		"start": "next start"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/DopamineDriven/wcd-next.git"
-	},
+	"repository": "git+https://github.com/DopamineDriven/wcd-next.git",
 	"keywords": [],
 	"author": "Andrew Ross",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/DopamineDriven/wcd-next/issues"
 	},
-	"homepage": "https://github.com/DopamineDriven/wcd-next#readme"
+	"homepage": "https://github.com/DopamineDriven/wcd-next#readme",
+	"dependencies": {
+		"apollo-server-micro": "^2.15.1",
+		"lodash": "^4.17.19",
+		"next": "^9.4.4",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"styled-components": "^5.1.1"
+	},
+	"devDependencies": {
+		"@types/node": "^14.0.20",
+		"@types/react": "^16.9.41",
+		"@types/react-dom": "^16.9.8",
+		"@types/styled-components": "^5.1.1",
+		"babel-plugin-styled-components": "^1.10.7",
+		"dotenv": "^8.2.0",
+		"typescript": "^3.9.6"
+	}
 }
